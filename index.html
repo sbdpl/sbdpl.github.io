@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBDPL | Welcome</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+        .hero {
+            background: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.8)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: #fff;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #1e293b;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0ea5e9;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .card h3 {
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+        .about-section {
+            background-color: #fff;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+        }
+        .contact-section {
+            background-color: #1e293b;
+            color: #fff;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SBDPL</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to SBDPL</h1>
+        <p>Providing professional, reliable, and high-quality solutions tailored to your business needs.</p>
+        <a href="#contact" class="btn">Get In Touch</a>
+    </section>
+
+    <div class="container">
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p style="margin-top: 1rem;">Welcome to SBDPL. We are dedicated to delivering excellence across all our core operations. With a focus on innovation, efficiency, and customer satisfaction, we help our partners and clients scale smoothly in a rapidly evolving marketplace.</p>
+        </section>
+
+        <section id="services">
+            <h2 style="text-align: center; margin-bottom: 1rem;">Our Services</h2>
+            <div class="services">
+                <div class="card">
+                    <h3>Enterprise Solutions</h3>
+                    <p>Streamlined business and operational frameworks designed to scale efficiently.</p>
+                </div>
+                <div class="card">
+                    <h3>Consulting Services</h3>
+                    <p>Expert insights and strategy formulation to keep your projects on track.</p>
+                </div>
+                <div class="card">
+                    <h3>Quality Assurance</h3>
+                    <p>Rigorous management structures ensuring absolute precision and excellence.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <div class="container" style="margin: 0 auto;">
+            <h2>Contact Us</h2>
+            <p style="margin-bottom: 1.5rem;">Have questions or want to collaborate? Reach out to us today.</p>
+            <p><strong>Email:</strong> contact@sbdpl.in</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 SBDPL. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
